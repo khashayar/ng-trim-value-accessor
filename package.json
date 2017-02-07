@@ -1,0 +1,43 @@
+{
+  "name": "ng-trim-value-accessor",
+  "version": "0.0.3",
+  "scripts": {
+    "build": "ngc -p tsconfig.json",
+    "lint": "tslint src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khashayar/ng-trim-value-accessor"
+  },
+  "author": {
+    "name": "Khashayar Hajian",
+    "email": "me@khashayar.me"
+  },
+  "keywords": [
+    "angular",
+    "value accessor",
+    "angular custom value accessor",
+    "angular trim value accessor"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khashayar/ng-trim-value-accessor/issues"
+  },
+  "main": "./dist/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@angular/common": "^2.4.6",
+    "@angular/compiler": "^2.4.6",
+    "@angular/compiler-cli": "^2.4.6",
+    "@angular/core": "^2.4.6",
+    "@angular/forms": "^2.4.6",
+    "@angular/platform-browser": "^2.4.6",
+    "@angular/platform-browser-dynamic": "^2.4.6",
+    "@angular/platform-server": "^2.4.6",
+    "codelyzer": "^2.0.0-beta.4",
+    "rxjs": "^5.1.0",
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.5",
+    "zone.js": "^0.7.6"
+  }
+}
