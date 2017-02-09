@@ -18,19 +18,20 @@ const TRIM_VALUE_ACCESSOR: any = {
 })
 export class TrimValueAccessor extends DefaultValueAccessor {
 
+  @HostListener('input', ['$event.target.value']) ngOnChange = (val: string) => {
+    this.onChange(val.trim());
+  };
+
   constructor(private renderer: Renderer, private elRef: ElementRef) {
     super(renderer, elRef);
   }
 
-  @HostListener('input', ['$event.target'])
-  ngOnChange = (el: HTMLInputElement | HTMLTextAreaElement): void => {
-    let val = el.value.trim();
-    this.onChange(val);
-  };
-
   writeValue(value: any): void {
-    if (!value || typeof value !== 'string') { return; }
-    super.writeValue(value.trim());
+    if (typeof value === 'string') {
+      value = value.trim();
+    }
+
+    super.writeValue(value);
   }
 
 }
