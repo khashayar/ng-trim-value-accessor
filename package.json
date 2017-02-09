@@ -1,6 +1,6 @@
 {
   "name": "ng-trim-value-accessor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "build": "ngc -p tsconfig.json",
     "lint": "tslint src/**/*.ts"
