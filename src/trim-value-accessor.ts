@@ -1,4 +1,4 @@
-import { Directive, HostListener, forwardRef, Renderer, ElementRef } from '@angular/core';
+import { Directive, HostListener, forwardRef } from '@angular/core';
 import { DefaultValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 const TRIM_VALUE_ACCESSOR: any = {
@@ -18,13 +18,10 @@ const TRIM_VALUE_ACCESSOR: any = {
 })
 export class TrimValueAccessor extends DefaultValueAccessor {
 
-  @HostListener('input', ['$event.target.value']) ngOnChange = (val: string) => {
+  @HostListener('input', ['$event.target.value'])
+  ngOnChange = (val: string) => {
     this.onChange(val.trim());
   };
-
-  constructor(private renderer: Renderer, private elRef: ElementRef) {
-    super(renderer, elRef);
-  }
 
   writeValue(value: any): void {
     if (typeof value === 'string') {
