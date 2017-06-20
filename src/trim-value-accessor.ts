@@ -13,7 +13,15 @@ const TRIM_VALUE_ACCESSOR: any = {
  * {@link FormControlName} directives.
  */
 @Directive({
-  selector: 'input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]',
+  selector: [
+    'input:not([type=checkbox]):not([type=radio]):not([type=password])[formControlName]',
+    'input:not([type=checkbox]):not([type=radio]):not([type=password])[formControl]',
+    'input:not([type=checkbox]):not([type=radio]):not([type=password])[ngModel]',
+    'textarea[formControlName]',
+    'textarea[formControl]',
+    'textarea[ngModel]',
+    '[ngDefaultControl]'
+  ].join(),
   providers: [ TRIM_VALUE_ACCESSOR ]
 })
 export class TrimValueAccessor extends DefaultValueAccessor {
