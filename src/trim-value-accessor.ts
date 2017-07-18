@@ -31,6 +31,11 @@ export class TrimValueAccessor extends DefaultValueAccessor {
     this.onChange(val.trim());
   };
 
+  @HostListener('blur', ['$event.target.value'])
+  applyTrim (val: string) {
+    this.writeValue(val.trim());
+  };
+
   writeValue(value: any): void {
     if (typeof value === 'string') {
       value = value.trim();
