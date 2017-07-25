@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/khashayar/ng-trim-value-accessor/compare/v0.0.6...v0.1.0) (2017-07-25)
+
+
+### Bug Fixes
+
+* angular doesn't detect the selector ([ebe4312](https://github.com/khashayar/ng-trim-value-accessor/commit/ebe4312)), closes [#6](https://github.com/khashayar/ng-trim-value-accessor/issues/6)
+
+
+### Features
+
+* apply trim on input's blur event ([6fe2e67](https://github.com/khashayar/ng-trim-value-accessor/commit/6fe2e67)), closes [#4](https://github.com/khashayar/ng-trim-value-accessor/issues/4)
+
+
+
 <a name="0.0.6"></a>
 ## [0.0.6](https://github.com/khashayar/ng-trim-value-accessor/compare/v0.0.5...v0.0.6) (2017-06-20)
 
