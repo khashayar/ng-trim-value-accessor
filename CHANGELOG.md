@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/khashayar/ng-trim-value-accessor/compare/v0.1.0...v1.0.0) (2017-09-25)
+
+
+### Features
+
+* provide an option to bail out of trimming ([6e05184](https://github.com/khashayar/ng-trim-value-accessor/commit/6e05184)), closes [#7](https://github.com/khashayar/ng-trim-value-accessor/issues/7)
+
+
+### BREAKING CHANGES
+
+* `readonly` input fields are now ignored.
+
+This could be used as way to bail out of trimming as well, for
+example in cases where another ValueAccessor is applied to a field.
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/khashayar/ng-trim-value-accessor/compare/v0.0.6...v0.1.0) (2017-07-25)
 
