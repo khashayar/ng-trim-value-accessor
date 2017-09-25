@@ -25,3 +25,11 @@ import { TrimValueAccessorModule } from 'ng-trim-value-accessor';
 })
 export class AppModule { }
 ```
+
+--
+
+**Note:** It ignores all `readonly` fields. For example the following field remains untouched:
+
+```html
+<input class="form-control" name="startDate" [(ngModel)]="model.startDate" ngbDatepicker readonly>
+```
