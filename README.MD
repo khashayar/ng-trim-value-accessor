@@ -12,7 +12,9 @@ To install this library, run:
 $ npm install ng-trim-value-accessor --save
 ```
 
-and then from your Angular `AppModule`:
+## Usage
+
+In your Angular `AppModule`:
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -26,10 +28,16 @@ import { TrimValueAccessorModule } from 'ng-trim-value-accessor';
 export class AppModule { }
 ```
 
---
+## Opt-out
 
-**Note:** It ignores all `readonly` fields. For example the following field remains untouched:
+By default, it ignores all `readonly` and `input[type="password]` fields. For example the following field remains untouched:
 
 ```html
 <input class="form-control" name="startDate" [(ngModel)]="model.startDate" ngbDatepicker readonly>
+```
+
+However if you want to *explicitly opt-out*, give a field `ng-trim-ignore` css class:
+
+```html
+<input type="text" class="form-control ng-trim-ignore" name="firstName" [(ngModel)]="model.firstName">
 ```

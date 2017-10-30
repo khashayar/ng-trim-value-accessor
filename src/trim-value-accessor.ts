@@ -14,13 +14,13 @@ const TRIM_VALUE_ACCESSOR: any = {
  */
 @Directive({
   selector: `
-    input:not([type=checkbox]):not([type=radio]):not([type=password]):not([readonly])[formControlName],
-    input:not([type=checkbox]):not([type=radio]):not([type=password]):not([readonly])[formControl],
-    input:not([type=checkbox]):not([type=radio]):not([type=password]):not([readonly])[ngModel],
-    textarea:not([readonly])[formControlName],
-    textarea:not([readonly])[formControl],
-    textarea:not([readonly])[ngModel],
-    [ngDefaultControl]'
+    input:not([type=checkbox]):not([type=radio]):not([type=password]):not([readonly]):not(.ng-trim-ignore)[formControlName],
+    input:not([type=checkbox]):not([type=radio]):not([type=password]):not([readonly]):not(.ng-trim-ignore)[formControl],
+    input:not([type=checkbox]):not([type=radio]):not([type=password]):not([readonly]):not(.ng-trim-ignore)[ngModel],
+    textarea:not([readonly]):not(.ng-trim-ignore)[formControlName],
+    textarea:not([readonly]):not(.ng-trim-ignore)[formControl],
+    textarea:not([readonly]):not(.ng-trim-ignore)[ngModel],
+    :not([readonly]):not(.ng-trim-ignore)[ngDefaultControl]'
   `,
   providers: [ TRIM_VALUE_ACCESSOR ]
 })
