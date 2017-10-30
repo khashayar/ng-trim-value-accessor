@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/khashayar/ng-trim-value-accessor/compare/v1.0.1...v2.0.0) (2017-10-30)
+
+
+### Features
+
+* opt-out option ([69ff6db](https://github.com/khashayar/ng-trim-value-accessor/commit/69ff6db)), closes [#8](https://github.com/khashayar/ng-trim-value-accessor/issues/8)
+
+
+### BREAKING CHANGES
+
+* Ignore all element with `ng-trim-ignore` class.
+
+It can be used as an opt-out option so the this library ignores
+a field and doesn't trim the value of it.
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/khashayar/ng-trim-value-accessor/compare/v1.0.0...v1.0.1) (2017-09-25)
 
