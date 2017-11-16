@@ -8,6 +8,10 @@ npm-debug.log
 # *.map
 # *.d.ts
 
+# ignore src for npm
+src/
+index.ts
+
 # JetBrains
 .idea
 .project
