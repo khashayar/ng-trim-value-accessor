@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "scripts": {
     "build": "ngc -p tsconfig.json",
+    "prepublish": "ngc -p tsconfig.json",
     "lint": "tslint src/**/*.ts"
   },
   "repository": {
@@ -24,6 +25,7 @@
     "url": "https://github.com/khashayar/ng-trim-value-accessor/issues"
   },
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "@angular/common": "^2.4.6",
@@ -34,6 +36,7 @@
     "@angular/platform-browser": "^2.4.6",
     "@angular/platform-browser-dynamic": "^2.4.6",
     "@angular/platform-server": "^2.4.6",
+    "@types/es6-shim": "^0.31.35",
     "codelyzer": "^2.0.0-beta.4",
     "rxjs": "^5.1.0",
     "tslint": "^4.4.2",
