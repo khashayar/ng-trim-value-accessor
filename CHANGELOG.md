@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.3"></a>
+## [2.0.3](https://github.com/khashayar/ng-trim-value-accessor/compare/v2.0.2...v2.0.3) (2018-06-05)
+
+
+### Bug Fixes
+
+* remove extra quote from selector ([57bfb99](https://github.com/khashayar/ng-trim-value-accessor/commit/57bfb99)), closes [#18](https://github.com/khashayar/ng-trim-value-accessor/issues/18)
+
+
+
 <a name="2.0.2"></a>
 ## [2.0.2](https://github.com/khashayar/ng-trim-value-accessor/compare/v2.0.0...v2.0.2) (2017-11-23)
 
