@@ -20,7 +20,7 @@ const TRIM_VALUE_ACCESSOR: any = {
     textarea:not([readonly]):not(.ng-trim-ignore)[formControlName],
     textarea:not([readonly]):not(.ng-trim-ignore)[formControl],
     textarea:not([readonly]):not(.ng-trim-ignore)[ngModel],
-    :not([readonly]):not(.ng-trim-ignore)[ngDefaultControl]'
+    :not([readonly]):not(.ng-trim-ignore)[ngDefaultControl]
   `,
   providers: [ TRIM_VALUE_ACCESSOR ]
 })
