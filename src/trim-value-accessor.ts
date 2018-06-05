@@ -27,12 +27,12 @@ const TRIM_VALUE_ACCESSOR: any = {
 export class TrimValueAccessor extends DefaultValueAccessor {
 
   @HostListener('input', ['$event.target.value'])
-  public ngOnChange(val: string) {
+  public ngOnChange(val: string): void {
     super.onChange(val.trim());
   };
 
   @HostListener('blur', ['$event.target.value'])
-  public applyTrim(val: string) {
+  public applyTrim(val: string): void {
     this.writeValue(val.trim());
   };
 
