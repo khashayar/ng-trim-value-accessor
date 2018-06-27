@@ -32,8 +32,9 @@ export class TrimValueAccessor extends DefaultValueAccessor {
   };
 
   @HostListener('blur', ['$event.target.value'])
-  applyTrim (val: string) {
+  ngOnBlur = (val: string) => {
     this.writeValue(val.trim());
+    this.onTouched();
   };
 
   writeValue(value: any): void {
