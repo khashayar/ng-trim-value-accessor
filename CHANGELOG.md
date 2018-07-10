@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.4"></a>
+## [2.0.4](https://github.com/khashayar/ng-trim-value-accessor/compare/v2.0.3...v2.0.4) (2018-07-10)
+
+
+### Bug Fixes
+
+* must call `onTouched` on blur ([9d91696](https://github.com/khashayar/ng-trim-value-accessor/commit/9d91696)), closes [#13](https://github.com/khashayar/ng-trim-value-accessor/issues/13)
+
+
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://github.com/khashayar/ng-trim-value-accessor/compare/v2.0.2...v2.0.3) (2018-06-05)
 

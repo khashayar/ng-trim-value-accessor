@@ -1,6 +1,6 @@
 {
   "name": "ng-trim-value-accessor",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "scripts": {
     "build": "ngc -p tsconfig.json",
     "prepublish": "ngc -p tsconfig.json",
