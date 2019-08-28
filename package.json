@@ -1,6 +1,6 @@
 {
   "name": "ng-trim-value-accessor",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "scripts": {
     "build": "ng-packagr -p package.json",
     "prepublish": "ng-packagr -p package.json",
@@ -26,7 +26,9 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@angular/common": "^8.0.0",
