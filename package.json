@@ -1,6 +1,6 @@
 {
   "name": "ng-trim-value-accessor",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "scripts": {
     "build": "ng-packagr -p package.json",
     "prepublish": "ng-packagr -p package.json",
