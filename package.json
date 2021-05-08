@@ -38,7 +38,7 @@
     "@angular/platform-server": "^8.0.0",
     "@types/es6-shim": "^0.31.35",
     "codelyzer": "^5.1.0",
-    "ng-packagr": "^5.5.0",
+    "ng-packagr": "^10.1.1",
     "tslint": "^4.4.2",
     "typescript": "^3.4.0",
     "zone.js": "^0.10.2"
